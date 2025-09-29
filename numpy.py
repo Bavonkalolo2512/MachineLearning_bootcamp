@@ -2,7 +2,7 @@
 import numpy as np
 
 # creons un tableau a partir de d'une liste
-table = np.array([1,2,3,4,5])
+table = [1,2,3,4,5]
 print(table)
 
 # verifions le type de notre variable Table
@@ -18,7 +18,7 @@ table2.ndim
 # NB: un tableau a une dimention est appele vecteur, et celui de 2 dimension Matrice
 
 # passons maintenant au tableau a 3 dimention
-table3 = np.array([
+table3 = [
     [
         ['a','b','c'],
         ['d','e','f']
@@ -35,7 +35,7 @@ table3 = np.array([
       ['r','s','u'],
       ['v','w','x']
       ]
-    ])
+    ]
 print(table3)
 
 # nombre de dimension
