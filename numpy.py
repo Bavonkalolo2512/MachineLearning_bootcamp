@@ -76,9 +76,12 @@ tableau7 = np.random.randint(0,10,20)
 print(tableau7)
 
 # gener une sequence de nombre compris entre 2 nombre avec un ecart regulier
-
 tableau8 = np.linspace(1,10,15)
 print(tableau8)
+
+# creation d'un tableau de valueurs aleatoires : les parametres sont lenombre de ligne et de colonnes
+array_aleatoire = np.random.random(4,3)
+print(array_aleatoire)
 
 # Acceder aux element, selectionner, modifier et mettre a jour nunpy
 array = np.arange(10)
