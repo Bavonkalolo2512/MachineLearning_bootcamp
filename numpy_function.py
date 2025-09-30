@@ -1,5 +1,5 @@
 # On commence par toujour importer la librerie car elle externe a python et elle est ecrit en langage C
-import numpy as np
+import Numpy as np
 
 # creons un tableau a partir de d'une liste
 table = [1,2,3,4,5]
@@ -109,3 +109,7 @@ print(array)
 # les operation sur les tableau
 tab1 = np.arange(5)
 tab2 = np.random.randint(1,10,5)
+
+
+# les fonctiond mathematique et statistique 
+
