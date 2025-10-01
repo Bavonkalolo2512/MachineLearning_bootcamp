@@ -1,5 +1,5 @@
 # On commence par toujour importer la librerie car elle externe a python et elle est ecrit en langage C
-import Numpy as np
+import numpy as np
 
 # creons un tableau a partir de d'une liste
 table = [1,2,3,4,5]
@@ -113,3 +113,52 @@ tab2 = np.random.randint(1,10,5)
 
 # les fonctiond mathematique et statistique 
 
+table_somme = np.sum(array)  # somme d'un tableau   
+table_moyenne = np.mean(array) # la moyenne 
+table_ecartType = np.sqrt(array) # racine carre de chaque valeur dans un tableau 
+table_std = np.std(array) # 
+table_max = np.max(array)
+table_min = np.min(array)
+table_abs = np.abs(array)
+table_median = np.median(array)
+
+# MANIPULATION DE TABLEAU 
+
+# Produit de valeur a valeur 
+
+a = np.array([[1, 2, 3],
+                  [4, 5, 6]])
+b = np.array([[2, 1, 3],
+                  [3, 2, 1]])
+
+Produit1 = a*b
+print(Produit1)
+
+# Produit de Matriciel Nb: l'operztion exige que les deux tableau ayent le meme nombre de ligne et colonnes
+
+a2 = np.array([[1, 2, 3],
+                  [4, 5, 6],
+                  [3, 2, 1]])
+b2 = np.array([[2, 1, 3],
+                  [3, 2, 1],[3, 2, 1]])
+
+Produit_matriciel = np.dot(a2, b2)
+print(Produit_matriciel)
+
+# SLICING ET INDEXATION SELECTION 
+
+# la premiere colonne de a2
+sliced = a2[:, 0]
+print(sliced)	
+
+# une sous matrice 
+sliced = a2[0:1,0:1]
+
+# redimentionner un vecteur en tableau 
+data = np.arange(20)
+tableau = data.reshape(4,5)
+print(tableau)
+
+# ajouter un des element au tableau NB: Axis: determine la place d'ajout
+ajout_tableau = np.append(tableau,[[0,0,0,0,0]],axis=0)
+print(ajout_tableau)
